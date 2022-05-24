@@ -1,83 +1,43 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Step 1: Setup of the Silicon model system &mdash; quippy d467b6c+ documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
-
-  
-  
+  <title>Step 1: Setup of the Silicon model system &mdash; quippy aadb4a0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
-
-  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Step 2: Classical MD simulation of fracture in Si" href="adaptive-qmmm-step2.html" />
     <link rel="prev" title="Theoretical background" href="adaptive-qmmm-theory.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
             <a href="../index.html" class="icon icon-home"> quippy
-          
-
-          
-            
             <img src="../_static/hybrid.png" class="logo" alt="Logo"/>
-          
           </a>
-
-          
-            
-            
               <div class="version">
-                d467b6c+
+                aadb4a0
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -85,22 +45,12 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
     
-            
-            
-              
-            
-            
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation of QUIP and quippy</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">QUIP Overview Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quippy-ase-interoperability.html">Interoperability with Atomic Simulation Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="adglass.html">Molecular Dynamics Simulation of Fracture in Quartz</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="adaptive-qmmm.html">Adaptive QM/MM MD of Fracture in Silicon</a><ul class="current">
@@ -121,11 +71,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../quippy.html">Quippy library reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../visualisation.html">Visualisation Tools</a></li>
 </ul>
 
-            
-          
     <p></p>
     <ul>
         <li><a href="../genindex.html">Index</a></li>
@@ -135,72 +82,31 @@
     </ul>
   
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">quippy</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
           <li><a href="index.html">Tutorials</a> &raquo;</li>
-        
           <li><a href="adaptive-qmmm.html">Adaptive QM/MM MD of Fracture in Silicon</a> &raquo;</li>
-        
       <li>Step 1: Setup of the Silicon model system</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/Tutorials/adaptive-qmmm-step1.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   
 <style>
 /* CSS overrides for sphinx_rtd_theme */
@@ -225,15 +131,15 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="step-1-setup-of-the-silicon-model-system">
-<span id="step1"></span><h1>Step 1: Setup of the Silicon model system<a class="headerlink" href="#step-1-setup-of-the-silicon-model-system" title="Permalink to this headline">¶</a></h1>
+<section id="step-1-setup-of-the-silicon-model-system">
+<span id="step1"></span><h1>Step 1: Setup of the Silicon model system<a class="headerlink" href="#step-1-setup-of-the-silicon-model-system" title="Permalink to this headline"></a></h1>
 <p>The first task in this tutorial is to build the model system we will
 use for both the classical and QM/MM simulations. We will use an
 approximately 2D model system in the <a class="reference internal" href="adaptive-qmmm-theory.html#thin-strip"><span class="std std-ref">thin strip geometry</span></a></p>
-<div class="section" id="building-the-bulk-unit-cell-30-minutes">
-<h2>1.1 Building the bulk unit cell (30 minutes)<a class="headerlink" href="#building-the-bulk-unit-cell-30-minutes" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="import-the-relevant-modules-and-functions">
-<h3>Import the relevant modules and functions<a class="headerlink" href="#import-the-relevant-modules-and-functions" title="Permalink to this headline">¶</a></h3>
+<section id="building-the-bulk-unit-cell-30-minutes">
+<h2>1.1 Building the bulk unit cell (30 minutes)<a class="headerlink" href="#building-the-bulk-unit-cell-30-minutes" title="Permalink to this headline"></a></h2>
+<section id="import-the-relevant-modules-and-functions">
+<h3>Import the relevant modules and functions<a class="headerlink" href="#import-the-relevant-modules-and-functions" title="Permalink to this headline"></a></h3>
 <p>We start by importing all the functions we will need. Create a new
 script named <code class="docutils literal notranslate"><span class="pre">make_crack.py</span></code> and add the following lines:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">ase.lattice</span> <span class="kn">import</span> <span class="n">bulk</span>
@@ -263,9 +169,9 @@ in the <a class="reference internal" href="adaptive-qmmm-step0.html#practical"><
 make it clear where each function we are using is defined, and to make it easier
 to look them up in the online documentation.</p>
 </div>
-</div>
-<div class="section" id="definition-of-the-simulation-parameters">
-<span id="parameters"></span><h3>Definition of the simulation parameters<a class="headerlink" href="#definition-of-the-simulation-parameters" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="definition-of-the-simulation-parameters">
+<span id="parameters"></span><h3>Definition of the simulation parameters<a class="headerlink" href="#definition-of-the-simulation-parameters" title="Permalink to this headline"></a></h3>
 <p>Let’s first define the parameters needed to construct our model
 system. There are three possible crack systems. For now, we will use
 the first (uncommented) one, <span class="math notranslate nohighlight">\((111)[01\bar{1}]\)</span>, which
@@ -320,9 +226,9 @@ potential:</p>
 <p>You should download the <a class="reference download internal" download="" href="../_downloads/9266e6e840076d2ba6032f338f845bd6/params.xml"><code class="xref download docutils literal notranslate"><span class="pre">params.xml</span></code></a> file, which contains
 the parameters for the SW potential (and also for DFTB, needed for
 <a class="reference internal" href="adaptive-qmmm-step3.html#step3"><span class="std std-ref">Step 3: LOTF hybrid MD simulation of fracture in Si</span></a>)</p>
-</div>
-<div class="section" id="finding-the-equilibrium-lattice-constant-for-si">
-<span id="latticeconstant"></span><h3>Finding the equilibrium lattice constant for Si<a class="headerlink" href="#finding-the-equilibrium-lattice-constant-for-si" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="finding-the-equilibrium-lattice-constant-for-si">
+<span id="latticeconstant"></span><h3>Finding the equilibrium lattice constant for Si<a class="headerlink" href="#finding-the-equilibrium-lattice-constant-for-si" title="Permalink to this headline"></a></h3>
 <p>To find the Si equilibrium lattice constant <cite>a0</cite> with the SW potential,
 let’s first build the 8-atom diamond cubic cell for silicon, with an initial
 guess at lattice constant of 5.44 A. This can be done using the
@@ -330,7 +236,7 @@ guess at lattice constant of 5.44 A. This can be done using the
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">si_bulk</span> <span class="o">=</span> <span class="o">...</span>            <span class="c1"># Build the 8-atom diamond cubic cell for Si</span>
 </pre></div>
 </div>
-<p>The variable <cite>si_bulk</cite> is an <code class="xref py py-class docutils literal notranslate"><span class="pre">Atoms</span></code> object.  It
+<p>The variable <cite>si_bulk</cite> is an <a class="reference external" href="https://wiki.fysik.dtu.dk/ase/ase/atoms.html#ase.Atoms" title="(in ASE)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atoms</span></code></a> object.  It
 has various attributes and methods that will be introduced as necessary
 during this tutorial.</p>
 <p>Once you have created your <cite>si_bulk</cite> object, run the <code class="docutils literal notranslate"><span class="pre">make_crack.py</span></code>
@@ -353,7 +259,7 @@ one). Press <cite>b</cite> to toggle the display of bonds. For more help on
 <cite>AtomEye</cite> see its <a class="reference external" href="http://mt.seas.upenn.edu/Archive/Graphics/A">web page</a> or the documentation
 for the <code class="xref py py-mod docutils literal notranslate"><span class="pre">qlab</span></code> and <code class="xref py py-mod docutils literal notranslate"><span class="pre">atomeye</span></code> modules.</p>
 <p>Now, we initialise the Stillinger-Weber (SW) classical interatomic
-potential using quippy’s <a class="reference internal" href="../potential.html#quippy.potential.Potential" title="quippy.potential.Potential"><code class="xref py py-class docutils literal notranslate"><span class="pre">Potential</span></code></a> class</p>
+potential using quippy’s <code class="xref py py-class docutils literal notranslate"><span class="pre">Potential</span></code> class</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mm_pot</span> <span class="o">=</span> <span class="n">Potential</span><span class="p">(</span><span class="s1">&#39;IP SW&#39;</span><span class="p">,</span> <span class="n">param_filename</span><span class="o">=</span><span class="s1">&#39;params.xml&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -396,16 +302,16 @@ off-diagonal components of the lattice are exactly zero:</p>
 <span class="n">si_bulk</span><span class="o">.</span> <span class="o">...</span>    <span class="c1"># re-attach the SW potential as a calculator</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="milestone-1-1">
-<h3>Milestone 1.1<a class="headerlink" href="#milestone-1-1" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="milestone-1-1">
+<h3>Milestone 1.1<a class="headerlink" href="#milestone-1-1" title="Permalink to this headline"></a></h3>
 <p>At this point your script should look something like <a class="reference download internal" download="" href="../_downloads/b1d0ef2c16653116859eb53c4f6892a7/make_crack_1.py"><code class="xref download docutils literal notranslate"><span class="pre">make_crack_1.py</span></code></a>.</p>
-</div>
-</div>
-<div class="section" id="calculation-of-elastic-and-surface-properties-of-silicon-30-minutes">
-<h2>1.2 Calculation of elastic and surface properties of silicon (30 minutes)<a class="headerlink" href="#calculation-of-elastic-and-surface-properties-of-silicon-30-minutes" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="calculation-of-the-young-s-modulus-and-the-poisson-ratio">
-<span id="youngs-modulus-and-poisson-ratio"></span><h3>Calculation of the Young’s modulus and the Poisson ratio<a class="headerlink" href="#calculation-of-the-young-s-modulus-and-the-poisson-ratio" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="calculation-of-elastic-and-surface-properties-of-silicon-30-minutes">
+<h2>1.2 Calculation of elastic and surface properties of silicon (30 minutes)<a class="headerlink" href="#calculation-of-elastic-and-surface-properties-of-silicon-30-minutes" title="Permalink to this headline"></a></h2>
+<section id="calculation-of-the-young-s-modulus-and-the-poisson-ratio">
+<span id="youngs-modulus-and-poisson-ratio"></span><h3>Calculation of the Young’s modulus and the Poisson ratio<a class="headerlink" href="#calculation-of-the-young-s-modulus-and-the-poisson-ratio" title="Permalink to this headline"></a></h3>
 <p>Following the discussion <a class="reference internal" href="adaptive-qmmm-theory.html#thin-strip"><span class="std std-ref">above</span></a> section, we need to
 calculate some elastic properties of our model silicon. To calculate the Young’s
 modulus <cite>E</cite> along the direction perpendicular to the cleavage plane, and the
@@ -436,9 +342,9 @@ given <cite>c</cite>, the <cite>cleavage_plane</cite> and the <cite>crack_direct
 <p>As a check, for the <span class="math notranslate nohighlight">\((111)[01\bar{1}]\)</span> crack system, you
 should get a Young’s modulus of 142.8 GPa and a Poisson ratio of
 0.265.</p>
-</div>
-<div class="section" id="calculation-of-the-surface-energy-of-the-cleavage-plane">
-<span id="surface-energy"></span><h3>Calculation of the surface energy of the cleavage plane<a class="headerlink" href="#calculation-of-the-surface-energy-of-the-cleavage-plane" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="calculation-of-the-surface-energy-of-the-cleavage-plane">
+<span id="surface-energy"></span><h3>Calculation of the surface energy of the cleavage plane<a class="headerlink" href="#calculation-of-the-surface-energy-of-the-cleavage-plane" title="Permalink to this headline"></a></h3>
 <p>To calculate the surface energy per unit area <cite>gamma</cite> of the
 <cite>cleavage_plane</cite>, we build a Si slab unit cell aligned with the
 requested crystallographic orientation. The orientation of the crack
@@ -505,7 +411,7 @@ key. The green atoms on the surfaces are three-fold coordinated.</p>
 <p>Now that we have both the bulk unit slab and the surface unit cell,
 the surface energy <cite>gamma</cite> for the cleavage plane can be calculated
 using the SW potential. Once a calculator (e.g. <cite>mm_pot</cite>) is attached
-to an <code class="xref py py-class docutils literal notranslate"><span class="pre">Atoms</span></code> object, the potential energy of the
+to an <a class="reference external" href="https://wiki.fysik.dtu.dk/ase/ase/atoms.html#ase.Atoms" title="(in ASE)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atoms</span></code></a> object, the potential energy of the
 atomic system can be calculated with
 <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_potential_energy()</span></code>. It is useful to know
 that the number of atoms in an Atoms object can be obtained by the
@@ -526,16 +432,16 @@ with respect to the number of layers in the system (note the cutoff
 distance of the SW potential, which you can obtain with
 <code class="docutils literal notranslate"><span class="pre">mm_pot.cutoff()</span></code>, is about 3.93 A, just beyond the second neighbour
 distance).</p>
-</div>
-<div class="section" id="milestone-1-2">
-<h3>Milestone 1.2<a class="headerlink" href="#milestone-1-2" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="milestone-1-2">
+<h3>Milestone 1.2<a class="headerlink" href="#milestone-1-2" title="Permalink to this headline"></a></h3>
 <p>At this point your script should look something like <a class="reference download internal" download="" href="../_downloads/c0d9dd96e0704a74574fe0cf51556569/make_crack_2.py"><code class="xref download docutils literal notranslate"><span class="pre">make_crack_2.py</span></code></a></p>
-</div>
-</div>
-<div class="section" id="setup-of-the-crack-slab-supercell-30-minutes">
-<h2>1.3 Setup of the crack slab supercell (30 minutes)<a class="headerlink" href="#setup-of-the-crack-slab-supercell-30-minutes" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="replicating-the-unit-cell-to-form-a-slab-supercell">
-<h3>Replicating the unit cell to form a slab supercell<a class="headerlink" href="#replicating-the-unit-cell-to-form-a-slab-supercell" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="setup-of-the-crack-slab-supercell-30-minutes">
+<h2>1.3 Setup of the crack slab supercell (30 minutes)<a class="headerlink" href="#setup-of-the-crack-slab-supercell-30-minutes" title="Permalink to this headline"></a></h2>
+<section id="replicating-the-unit-cell-to-form-a-slab-supercell">
+<h3>Replicating the unit cell to form a slab supercell<a class="headerlink" href="#replicating-the-unit-cell-to-form-a-slab-supercell" title="Permalink to this headline"></a></h3>
 <p>Now, we have all the ingredients needed to build the full crack slab
 system and to apply the requested strain field.</p>
 <p>We start by building the full slab system. First, we need to find the number
@@ -592,9 +498,9 @@ original <cite>x</cite> coordinates of the left and right surfaces are also save
 </div>
 <p>At this point, your <cite>crack_slab</cite> should look something like this:</p>
 <a class="reference internal image-reference" href="../_images/crack_slab_1.png"><img alt="../_images/crack_slab_1.png" class="align-center" src="../_images/crack_slab_1.png" style="width: 600px;" /></a>
-</div>
-<div class="section" id="setting-constraints-to-fix-the-edge-atoms">
-<span id="crack-fixatoms"></span><h3>Setting constraints to fix the edge atoms<a class="headerlink" href="#setting-constraints-to-fix-the-edge-atoms" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="setting-constraints-to-fix-the-edge-atoms">
+<span id="crack-fixatoms"></span><h3>Setting constraints to fix the edge atoms<a class="headerlink" href="#setting-constraints-to-fix-the-edge-atoms" title="Permalink to this headline"></a></h3>
 <p>During the MD simulations, the positions of the top and bottom rows of
 atoms will be kept fixed. More precisely, these rows of atoms will
 only be moved rigidly when the strain is applied and will not move in
@@ -646,9 +552,9 @@ region in between.</p>
 </div>
 <p>This is the resulting crack slab, for the <span class="math notranslate nohighlight">\((111)\)</span> case:</p>
 <a class="reference internal image-reference" href="../_images/crack_slab_2.png"><img alt="../_images/crack_slab_2.png" class="align-center" src="../_images/crack_slab_2.png" style="width: 600px;" /></a>
-</div>
-<div class="section" id="relaxation-of-the-crack-slab">
-<h3>Relaxation of the crack slab<a class="headerlink" href="#relaxation-of-the-crack-slab" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="relaxation-of-the-crack-slab">
+<h3>Relaxation of the crack slab<a class="headerlink" href="#relaxation-of-the-crack-slab" title="Permalink to this headline"></a></h3>
 <p>To obtain a good starting point for the MD, we need to perform an
 approximate geometry optimisation of the slab, keeping the top and
 bottom rows of atoms fixed. Once again, our <cite>mm_pot</cite> needs to be
@@ -666,9 +572,9 @@ section</span></a>:</p>
 </div>
 <p>Here’s what your minimised crack slab should look like:</p>
 <a class="reference internal image-reference" href="../_images/crack_slab_3.png"><img alt="../_images/crack_slab_3.png" class="align-center" src="../_images/crack_slab_3.png" style="width: 600px;" /></a>
-</div>
-<div class="section" id="locating-the-crack-tip">
-<h3>Locating the crack tip<a class="headerlink" href="#locating-the-crack-tip" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="locating-the-crack-tip">
+<h3>Locating the crack tip<a class="headerlink" href="#locating-the-crack-tip" title="Permalink to this headline"></a></h3>
 <p>Before starting the next steps, it is useful to find the initial
 position of the crack tip.  This is provided by the
 <code class="xref py py-func docutils literal notranslate"><span class="pre">find_crack_tip_stress_field()</span></code> function:</p>
@@ -681,11 +587,11 @@ stress field to the per-atom stresses calculated by the classical SW
 potential, allowing the origin of the analytical stress field to move
 during the fit. Then, we simply set this point to be the current crack
 position.</p>
-</div>
-<div class="section" id="saving-the-output-file">
-<h3>Saving the output file<a class="headerlink" href="#saving-the-output-file" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="saving-the-output-file">
+<h3>Saving the output file<a class="headerlink" href="#saving-the-output-file" title="Permalink to this headline"></a></h3>
 <p>Finally, we can save all the calculated materials properties inside the
-<cite>crack_slab</cite> <code class="xref py py-class docutils literal notranslate"><span class="pre">Atoms</span></code> object, before writing it to disk:</p>
+<cite>crack_slab</cite> <a class="reference external" href="https://wiki.fysik.dtu.dk/ase/ase/atoms.html#ase.Atoms" title="(in ASE)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atoms</span></code></a> object, before writing it to disk:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">crack_slab</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;nneightol&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.30</span> <span class="c1"># set nearest neighbour tolerance</span>
 <span class="n">crack_slab</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;LatticeConstant&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a0</span>
 <span class="n">crack_slab</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;C11&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
@@ -712,62 +618,45 @@ defined in the <a class="reference internal" href="#parameters"><span class="std
 <span class="n">write</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="n">crack_slab</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="milestone-1-3">
-<h3>Milestone 1.3<a class="headerlink" href="#milestone-1-3" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="milestone-1-3">
+<h3>Milestone 1.3<a class="headerlink" href="#milestone-1-3" title="Permalink to this headline"></a></h3>
 <p>At this point your final script should look something like
 <a class="reference internal" href="adaptive-qmmm-solutions.html#make-crack"><span class="std std-ref">Step 1 solution — make_crack.py</span></a>, and your XYZ file like <code class="xref download docutils literal notranslate"><span class="pre">crack.xyz</span></code>.</p>
 <p>When you are ready, proceed to <a class="reference internal" href="adaptive-qmmm-step2.html#step2"><span class="std std-ref">Step 2: Classical MD simulation of fracture in Si</span></a>.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="adaptive-qmmm-step2.html" class="btn btn-neutral float-right" title="Step 2: Classical MD simulation of fracture in Si" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="adaptive-qmmm-theory.html" class="btn btn-neutral float-left" title="Theoretical background" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="adaptive-qmmm-step2.html" class="btn btn-neutral float-right" title="Step 2: Classical MD simulation of fracture in Si" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2008-2020, James Kermode.
-
-    </p>
+    <p>&#169; Copyright 2008-2021, James Kermode.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
