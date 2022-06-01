@@ -23,6 +23,7 @@ jobs:
         id: buildlibs
         run : |
           QUIP_ARCH=linux_x86_64_gfortran_openmp
+          make quippy
           echo ::set-output name=quip_arch::${QUIP_ARCH}
 
       - name: Build wheels
