@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Step 2: Classical MD simulation of fracture in Si &mdash; quippy aadb4a0 documentation</title>
+  <title>Step 2: Classical MD simulation of fracture in Si &mdash; quippy bae81c5 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
@@ -33,15 +33,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> quippy
-            <img src="../_static/hybrid.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            quippy
+              <img src="../_static/hybrid.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                aadb4a0
+                bae81c5
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -51,7 +55,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation of QUIP and quippy</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="overview.html">QUIP Overview Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html">QUIP Overview Tutorials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quippy-ase-interoperability.html">Interoperability with Atomic Simulation Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="adglass.html">Molecular Dynamics Simulation of Fracture in Quartz</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="adaptive-qmmm.html">Adaptive QM/MM MD of Fracture in Silicon</a><ul class="current">
@@ -95,10 +99,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Tutorials</a> &raquo;</li>
-          <li><a href="adaptive-qmmm.html">Adaptive QM/MM MD of Fracture in Silicon</a> &raquo;</li>
-      <li>Step 2: Classical MD simulation of fracture in Si</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tutorials</a></li>
+          <li class="breadcrumb-item"><a href="adaptive-qmmm.html">Adaptive QM/MM MD of Fracture in Silicon</a></li>
+      <li class="breadcrumb-item active">Step 2: Classical MD simulation of fracture in Si</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/Tutorials/adaptive-qmmm-step2.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -108,31 +112,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="step-2-classical-md-simulation-of-fracture-in-si">
+  <section id="step-2-classical-md-simulation-of-fracture-in-si">
 <span id="step2"></span><h1>Step 2: Classical MD simulation of fracture in Si<a class="headerlink" href="#step-2-classical-md-simulation-of-fracture-in-si" title="Permalink to this heading"></a></h1>
 <p>This part of the tutorial requires the initial crack structure <code class="docutils literal notranslate"><span class="pre">crack.xyz</span></code>
 produced in <a class="reference internal" href="adaptive-qmmm-step1.html#step1"><span class="std std-ref">Step 1: Setup of the Silicon model system</span></a>. If you had problems completing the first part, you
@@ -257,7 +237,7 @@ all atoms. We will attach this to the dynamics in step 2.2 below.</p>
 <h3>Setup of the potential<a class="headerlink" href="#setup-of-the-potential" title="Permalink to this heading"></a></h3>
 <p>Before starting the MD simulation, the SW classical potential must be
 initialised and attached to the <cite>atoms</cite> object.  As in <cite>Step 1</cite>, we
-use quippy’s <code class="xref py py-class docutils literal notranslate"><span class="pre">Potential</span></code> class, but now we
+use quippy’s <a class="reference internal" href="../potential.html#quippy.potential.Potential" title="quippy.potential.Potential"><code class="xref py py-class docutils literal notranslate"><span class="pre">Potential</span></code></a> class, but now we
 need to pass the <cite>cutoff_skin</cite> parameter, which is used to decide when
 the neighbour list needs to be updated (see the attribute
 <code class="xref py py-attr docutils literal notranslate"><span class="pre">cutoff_skin</span></code>). Moreover, we request
@@ -513,7 +493,7 @@ the <span class="math notranslate nohighlight">\(j\)</span>th component of the f
 near zero temperature, and it is common to use the second term to
 define a per-atom stress tensor.</p>
 <p>Note, however, that this requires a definition of the atomic volume. By default
-the <code class="xref py py-meth docutils literal notranslate"><span class="pre">get_stresses()</span></code> function simply divides the
+the <a class="reference internal" href="../potential.html#quippy.potential.Potential.get_stresses" title="quippy.potential.Potential.get_stresses"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_stresses()</span></code></a> function simply divides the
 total cell volume by the number of atoms to get the volume per atom. This is
 not a very good approximation for our cell, which contains a lot of empty
 vacuum, so the volume per atom comes out much too large, and the stress
@@ -538,7 +518,7 @@ stress along the line <span class="math notranslate nohighlight">\(y=0\)</span> 
 obeys the expected <span class="math notranslate nohighlight">\(1/\sqrt{r}\)</span> divergence near the crack tip, and tends
 to a constant value ahead of the crack, due to the thin strip loading. <em>Hint:</em>
 use a mask to select the relevant atoms, as we did when fixing the edge atoms
-above. You can use the matplotlib <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot" title="(in Matplotlib v3.5.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">plot()</span></code></a> function to
+above. You can use the matplotlib <a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot" title="(in Matplotlib v3.7.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">plot()</span></code></a> function to
 produce a plot.</p>
 </section>
 <section id="time-averaged-stress-field">
@@ -664,7 +644,7 @@ that we increment at a constant rate).</p>
 <p>The following plot shows the evolution of <cite>G</cite> (blue) and of the
 position of the crack (red; stored as <cite>crack_pos_x</cite>). Note that a
 second vertical axis can be produced with the
-<a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.twinx.html#matplotlib.pyplot.twinx" title="(in Matplotlib v3.5.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">twinx()</span></code></a> function.</p>
+<a class="reference external" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.twinx.html#matplotlib.pyplot.twinx" title="(in Matplotlib v3.7.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">twinx()</span></code></a> function.</p>
 <a class="reference internal image-reference" href="../_images/energy-release-rate-crack-position.png"><img alt="../_images/energy-release-rate-crack-position.png" class="align-center" src="../_images/energy-release-rate-crack-position.png" style="width: 600px;" /></a>
 <p>In this case the crack actually arrests for a while at around <span class="math notranslate nohighlight">\(t
 = 6\)</span> ps. This is another characteristic feature of non-brittle

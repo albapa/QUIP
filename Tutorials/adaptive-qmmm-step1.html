@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Step 1: Setup of the Silicon model system &mdash; quippy aadb4a0 documentation</title>
+  <title>Step 1: Setup of the Silicon model system &mdash; quippy bae81c5 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
@@ -33,15 +33,19 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> quippy
-            <img src="../_static/hybrid.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            quippy
+              <img src="../_static/hybrid.png" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                aadb4a0
+                bae81c5
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -51,7 +55,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../install.html">Installation of QUIP and quippy</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutorials</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="overview.html">QUIP Overview Tutorial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html">QUIP Overview Tutorials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quippy-ase-interoperability.html">Interoperability with Atomic Simulation Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="adglass.html">Molecular Dynamics Simulation of Fracture in Quartz</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="adaptive-qmmm.html">Adaptive QM/MM MD of Fracture in Silicon</a><ul class="current">
@@ -95,10 +99,10 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="index.html">Tutorials</a> &raquo;</li>
-          <li><a href="adaptive-qmmm.html">Adaptive QM/MM MD of Fracture in Silicon</a> &raquo;</li>
-      <li>Step 1: Setup of the Silicon model system</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Tutorials</a></li>
+          <li class="breadcrumb-item"><a href="adaptive-qmmm.html">Adaptive QM/MM MD of Fracture in Silicon</a></li>
+      <li class="breadcrumb-item active">Step 1: Setup of the Silicon model system</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/Tutorials/adaptive-qmmm-step1.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -108,31 +112,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
-<style>
-/* CSS overrides for sphinx_rtd_theme */
-
-/* 24px margin */
-.nbinput.nblast.container,
-.nboutput.nblast.container {
-    margin-bottom: 19px;  /* padding has already 5px */
-}
-
-/* ... except between code cells! */
-.nblast.container + .nbinput.container {
-    margin-top: -19px;
-}
-
-.admonition > p:before {
-    margin-right: 4px;  /* make room for the exclamation icon */
-}
-
-/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
-.math {
-    text-align: unset;
-}
-</style>
-<section id="step-1-setup-of-the-silicon-model-system">
+  <section id="step-1-setup-of-the-silicon-model-system">
 <span id="step1"></span><h1>Step 1: Setup of the Silicon model system<a class="headerlink" href="#step-1-setup-of-the-silicon-model-system" title="Permalink to this heading"></a></h1>
 <p>The first task in this tutorial is to build the model system we will
 use for both the classical and QM/MM simulations. We will use an
@@ -260,7 +240,7 @@ one). Press <cite>b</cite> to toggle the display of bonds. For more help on
 <cite>AtomEye</cite> see its <a class="reference external" href="http://mt.seas.upenn.edu/Archive/Graphics/A">web page</a> or the documentation
 for the <code class="xref py py-mod docutils literal notranslate"><span class="pre">qlab</span></code> and <code class="xref py py-mod docutils literal notranslate"><span class="pre">atomeye</span></code> modules.</p>
 <p>Now, we initialise the Stillinger-Weber (SW) classical interatomic
-potential using quippy’s <code class="xref py py-class docutils literal notranslate"><span class="pre">Potential</span></code> class</p>
+potential using quippy’s <a class="reference internal" href="../potential.html#quippy.potential.Potential" title="quippy.potential.Potential"><code class="xref py py-class docutils literal notranslate"><span class="pre">Potential</span></code></a> class</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mm_pot</span> <span class="o">=</span> <span class="n">Potential</span><span class="p">(</span><span class="s1">&#39;IP SW&#39;</span><span class="p">,</span> <span class="n">param_filename</span><span class="o">=</span><span class="s1">&#39;params.xml&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
