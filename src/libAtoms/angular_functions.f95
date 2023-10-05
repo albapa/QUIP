@@ -17,7 +17,7 @@ private
    public :: SolidRCartesian
 
    public :: wigner3j
-   public :: cg_initialise, cg_finalise, cg_array
+   public :: cg_initialise, cg_finalise, cg_array, cg_check
 
 contains
 

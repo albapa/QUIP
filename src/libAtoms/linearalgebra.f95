@@ -342,7 +342,7 @@ module linearalgebra_module
   !% Return the outer product of two vectors. Usage is 'x .outer. y'.
   private :: outer, z_outer_zz
   interface operator(.outer.)
-     module procedure outer, z_outer_zz
+     module procedure outer, z_outer_zz, z_outer_dz, z_outer_zd
 #ifdef HAVE_QP
     module procedure outer_qq
 #endif
@@ -4007,6 +4007,35 @@ endsubroutine
 
   end function z_outer_zz
 
+  ! x .outer. y
+  pure function z_outer_dz(vector1,vector2) result(outr)
+    real(dp),intent(in), dimension(:) ::vector1
+    complex(dp),intent(in), dimension(:) ::vector2
+    complex(dp), dimension(size(vector1),size(vector2)) :: outr
+    integer::i,j
+
+    do j=1,size(vector2)
+       do i=1,size(vector1)
+          outr(i,j)=vector1(i)*conjg(vector2(j))
+       end do
+    end do
+
+  end function z_outer_dz
+
+  ! x .outer. y
+  pure function z_outer_zd(vector1,vector2) result(outr)
+    complex(dp),intent(in), dimension(:) ::vector1
+    real(dp),intent(in), dimension(:) ::vector2
+    complex(dp), dimension(size(vector1),size(vector2)) :: outr
+    integer::i,j
+
+    do j=1,size(vector2)
+       do i=1,size(vector1)
+          outr(i,j)=vector1(i)*vector2(j)
+       end do
+    end do
+
+  end function z_outer_zd
 
   !% Return the square root of 'r' if it is positive, or zero otherwise.
   elemental function sqrt_cut(r)
