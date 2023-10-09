@@ -359,7 +359,12 @@ private
 
   integer, external :: pointer_to
   public :: increase_stack
+
   public :: ran_normal
+  interface ran_normal
+     module procedure ran_normal, ran_normal_1d, ran_normal_2d
+  endinterface ran_normal
+
   public :: ran_uniform
   public :: ran
   public :: round
@@ -2698,6 +2703,28 @@ contains
      end do
      ran_normal = v1 * sqrt(-2.0_dp * log(r) / r)
    end function ran_normal
+
+  !% Return random real from Normal distribution with mean zero and standard deviation one.
+  function ran_normal_1d(n)
+     integer, intent(in) :: n
+     real(dp), dimension(n) :: ran_normal_1d
+     integer :: i
+
+     do i = 1, n
+        ran_normal_1d(i) = ran_normal()
+     enddo
+   end function ran_normal_1d
+
+  !% Return random real from Normal distribution with mean zero and standard deviation one.
+  function ran_normal_2d(n1, n2)
+     integer, intent(in) :: n1, n2
+     real(dp), dimension(n1,n2) :: ran_normal_2d
+     integer :: i
+
+     do i = 1, n2
+        ran_normal_2d(:,i) = ran_normal_1d(n1)
+     enddo
+   end function ran_normal_2d
 
    !% Return a random real distributed exponentially between zero and positive infinity
    !% with mean and variance of unity
